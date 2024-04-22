@@ -1,7 +1,6 @@
 import json
 import os
 import argparse
-
 import tensorflow as tf
 from data_helper import RelationData
 from model import RelationModel
@@ -72,8 +71,8 @@ class RelationTrainer(object):
                     acc, recall, prec, f_beta = get_multi_metrics(pred_y=predictions, true_y=batch["labels"],
                                                                   labels=label_list)
                     print("train: step: {}, loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(current_step, loss, acc, recall, prec, f_beta))
-                    with open("relation_train.txt", "a") as fw1:
-                        fw1.write("train:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
+                    with open("new_relation_train.txt", "a") as fw1:
+                        fw1.write("train: step: {}, loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(current_step, loss, acc, recall, prec, f_beta))
                         fw1.write("\n")
                     current_step += 1
                     if current_step % self.config["checkpoint_every"] == 0:
@@ -95,7 +94,7 @@ class RelationTrainer(object):
                             eval_f_betas.append(f_beta)
                         print("\n")
                         print("eval:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
-                        with open("relation_eval.txt", "a") as fw:
+                        with open("new_relation_eval.txt", "a") as fw:
                             fw.write("eval:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
                             fw.write("\n")
                         print("\n")

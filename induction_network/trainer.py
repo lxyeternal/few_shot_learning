@@ -1,14 +1,14 @@
-import argparse
 import json
 import os
+import argparse
 
 import tensorflow as tf
-from data_helper import InductionData
+from data_helper import PrototypicalData
+from model import PrototypicalModel
 from metrics import get_multi_metrics, mean
-from model import InductionModel
 
 
-class InductionTrainer(object):
+class PrototypicalTrainer(object):
     def __init__(self, args):
         self.args = args
         with open(args.config_path, "r") as fr:
@@ -18,10 +18,11 @@ class InductionTrainer(object):
         # load date set
         self.train_data_obj = self.load_data()
         self.eval_data_obj = self.load_data(is_training=False)
-        self.train_data = self.train_data_obj.gen_data(self.config["train_data"])
-        self.eval_data = self.eval_data_obj.gen_data(self.config["eval_data"])
+        self.train_tasks = self.train_data_obj.gen_data(self.config["train_data"])
+        self.eval_tasks = self.eval_data_obj.gen_data(self.config["eval_data"])
 
         print("vocab size: ", self.train_data_obj.vocab_size)
+
         self.model = self.create_model()
 
     def load_data(self, is_training=True):
@@ -29,17 +30,17 @@ class InductionTrainer(object):
         init data object
         :return:
         """
-        data_obj = InductionData(output_path=self.config["output_path"],
-                                 sequence_length=self.config["sequence_length"],
-                                 num_classes=self.config["num_classes"],
-                                 num_support=self.config["num_support"],
-                                 num_queries=self.config["num_queries"],
-                                 num_tasks=self.config["num_tasks"],
-                                 num_eval_tasks=self.config["num_eval_tasks"],
-                                 embedding_size=self.config["embedding_size"],
-                                 stop_word_path=self.config["stop_word_path"],
-                                 word_vector_path=self.config["word_vector_path"],
-                                 is_training=is_training)
+        data_obj = PrototypicalData(output_path=self.config["output_path"],
+                                    sequence_length=self.config["sequence_length"],
+                                    num_classes=self.config["num_classes"],
+                                    num_support=self.config["num_support"],
+                                    num_queries=self.config["num_queries"],
+                                    num_tasks=self.config["num_tasks"],
+                                    num_eval_tasks=self.config["num_eval_tasks"],
+                                    embedding_size=self.config["embedding_size"],
+                                    stop_word_path=self.config["stop_word_path"],
+                                    word_vector_path=self.config["word_vector_path"],
+                                    is_training=is_training)
         return data_obj
 
     def create_model(self):
@@ -47,8 +48,8 @@ class InductionTrainer(object):
         init model object
         :return:
         """
-        model = InductionModel(config=self.config, vocab_size=self.train_data_obj.vocab_size,
-                               word_vectors=self.train_data_obj.word_vectors)
+        model = PrototypicalModel(config=self.config, vocab_size=self.train_data_obj.vocab_size,
+                                  word_vectors=self.train_data_obj.word_vectors)
         return model
 
     def train(self):
@@ -56,7 +57,7 @@ class InductionTrainer(object):
         train model
         :return:
         """
-        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9, allow_growth=True)
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.5, allow_growth=True)
         sess_config = tf.ConfigProto(log_device_placement=False, allow_soft_placement=True, gpu_options=gpu_options)
         with tf.Session(config=sess_config) as sess:
             # init all variable in graph
@@ -65,13 +66,13 @@ class InductionTrainer(object):
 
             for epoch in range(self.config["epochs"]):
                 print("----- Epoch {}/{} -----".format(epoch + 1, self.config["epochs"]))
-                for batch in self.train_data_obj.next_batch(self.train_data):
+                for batch in self.train_data_obj.next_batch(self.train_tasks):
                     loss, predictions = self.model.train(sess, batch, self.config["keep_prob"])
                     label_list = list(set(batch["labels"]))
                     acc, recall, prec, f_beta = get_multi_metrics(pred_y=predictions, true_y=batch["labels"], labels=label_list)
                     print("train: step: {}, loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(current_step, loss, acc, recall, prec, f_beta))
-                    with open("induction_train.txt", "a") as fw1:
-                        fw1.write("train:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
+                    with open("new_prototypical_train.txt", "a") as fw1:
+                        fw1.write("train: step: {}, loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(current_step, loss, acc, recall, prec, f_beta))
                         fw1.write("\n")
                     current_step += 1
                     if current_step % self.config["checkpoint_every"] == 0:
@@ -80,7 +81,7 @@ class InductionTrainer(object):
                         eval_recalls = []
                         eval_precs = []
                         eval_f_betas = []
-                        for eval_batch in self.eval_data_obj.next_batch(self.eval_data):
+                        for eval_batch in self.train_data_obj.next_batch(self.eval_tasks):
                             eval_loss, eval_predictions = self.model.eval(sess, eval_batch)
                             eval_losses.append(eval_loss)
                             eval_label_list = list(set(eval_batch["labels"]))
@@ -92,14 +93,15 @@ class InductionTrainer(object):
                             eval_precs.append(prec)
                             eval_f_betas.append(f_beta)
                         print("\n")
-                        print("eval:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
-                        with open("induction_eval.txt", "a") as fw:
+                        print("eval:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls), mean(eval_precs), mean(eval_f_betas)))
+                        with open("new_prototypical_eval.txt", "a") as fw:
                             fw.write("eval:  loss: {}, acc: {}, recall: {}, precision: {}, f_beta: {}".format(mean(eval_losses), mean(eval_accs), mean(eval_recalls),mean(eval_precs), mean(eval_f_betas)))
                             fw.write("\n")
                         print("\n")
 
                         if self.config["ckpt_model_path"]:
-                            save_path = os.path.join(os.path.abspath(os.getcwd()), self.config["ckpt_model_path"])
+                            save_path = os.path.join(os.path.abspath(os.getcwd()),
+                                                     self.config["ckpt_model_path"])
                             if not os.path.exists(save_path):
                                 os.makedirs(save_path)
                             model_save_path = os.path.join(save_path, self.config["model_name"])
@@ -121,11 +123,10 @@ class InductionTrainer(object):
             # self.builder.save()
 
 
-
 if __name__ == "__main__":
     # Read the input information by the user on the command line
     parser = argparse.ArgumentParser()
     parser.add_argument("--config_path", help="config path of model")
     args = parser.parse_args()
-    trainer = InductionTrainer(args)
+    trainer = PrototypicalTrainer(args)
     trainer.train()
