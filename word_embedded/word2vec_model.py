@@ -21,7 +21,7 @@ class Word2vecModel:
 
 
     def load_data(self):
-        for dir in ["../reviews/eval/", "../reviews/train/"]:
+        for dir in ["../reviews/neweval/", "../reviews/newtrain/"]:
             files = os.listdir(dir)
             for file in files:
                 print("loading file: ", os.path.join(dir, file))
