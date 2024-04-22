@@ -2,7 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.DS_Store
+glove.6B.300d.txt
+word2vec_model.txt
+glove_model.txt
 # C extensions
 *.so
 

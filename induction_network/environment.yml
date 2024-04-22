@@ -1,0 +1,53 @@
+name: fewshot
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - ca-certificates=2024.3.11=h06a4308_0
+  - certifi=2022.12.7=py37h06a4308_0
+  - libedit=3.1.20230828=h5eee18b_0
+  - libffi=3.2.1=hf484d3e_1007
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - ncurses=6.4=h6a678d5_0
+  - openssl=1.0.2u=h7b6447c_0
+  - pip=22.3.1=py37h06a4308_0
+  - python=3.7.0=h6e4f718_3
+  - readline=7.0=h7b6447c_5
+  - setuptools=65.6.3=py37h06a4308_0
+  - sqlite=3.33.0=h62c20be_0
+  - tk=8.6.12=h1ccaba5_0
+  - wheel=0.38.4=py37h06a4308_0
+  - xz=5.4.6=h5eee18b_0
+  - zlib=1.2.13=h5eee18b_0
+  - pip:
+      - absl-py==2.1.0
+      - astor==0.8.1
+      - gast==0.2.2
+      - gensim==4.2.0
+      - glove-python-binary==0.2.0
+      - google-pasta==0.2.0
+      - grpcio==1.62.2
+      - h5py==3.8.0
+      - importlib-metadata==6.7.0
+      - keras-applications==1.0.8
+      - keras-preprocessing==1.1.2
+      - markdown==3.4.4
+      - markupsafe==2.1.5
+      - numpy==1.21.6
+      - opt-einsum==3.3.0
+      - protobuf==3.19.0
+      - scipy==1.7.3
+      - six==1.16.0
+      - smart-open==7.0.4
+      - tensorboard==1.15.0
+      - tensorflow==1.15.0
+      - tensorflow-estimator==1.15.1
+      - termcolor==2.3.0
+      - typing-extensions==4.7.1
+      - werkzeug==2.2.3
+      - wrapt==1.16.0
+      - zipp==3.15.0
+prefix: /home/wenbo/anaconda3/envs/fewshot
