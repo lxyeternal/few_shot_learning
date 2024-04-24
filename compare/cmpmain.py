@@ -5,12 +5,12 @@
 # @Software: Vscode
 
 import sys
-sys.path.append("/data1/gwb/few_shot_learning/")
+# sys.path.append("/data1/gwb/few_shot_learning/")
 
-from compare.constructdata import ConstructData
-from compare.rf import RFModel
-from compare.cnn import CNNModel
-from compare.gru import GRUModel
+from constructdata import ConstructData
+from rf import RFModel
+# from cnn import CNNModel
+# from gru import GRUModel
 
 class CmpMain:
     def __init__(self, nway, kshot) -> None:
@@ -20,18 +20,18 @@ class CmpMain:
         constructdata.selectfile()
         constructdata.sample2vec()
         self.train_sample_vec = constructdata.train_sample_vec
-        self.train_label = constructdata.train_label
+        self.train_label = constructdata.train_labels
         self.valid_sample_vec = constructdata.valid_sample_vec
-        self.valid_label = constructdata.valid_label
+        self.valid_label = constructdata.valid_labels
 
 
     def start(self):
 
-        # rfmodel = RFModel(self.train_sample_vec, self.train_label, self.valid_sample_vec, self.valid_label)
-        # rfmodel.rf_alg()
+        rfmodel = RFModel(self.train_sample_vec, self.train_label, self.valid_sample_vec, self.valid_label)
+        rfmodel.rf_alg()
 
-        cnnmodel = CNNModel(self.train_sample_vec, self.train_label, self.valid_sample_vec, self.valid_label, self.nway)
-        cnnmodel.cnn_alg()
+        # cnnmodel = CNNModel(self.train_sample_vec, self.train_label, self.valid_sample_vec, self.valid_label, self.nway)
+        # cnnmodel.cnn_alg()
 
         # grumodel = GRUModel(self.train_sample_vec, self.train_label, self.valid_sample_vec, self.valid_label, self.nway)
         # grumodel.gru_alg()
@@ -39,5 +39,5 @@ class CmpMain:
 
 
 if __name__ == '__main__':
-    cmpmain = CmpMain(2, 5)
+    cmpmain = CmpMain(2, 10)
     cmpmain.start()

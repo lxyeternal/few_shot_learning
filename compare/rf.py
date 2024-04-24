@@ -8,8 +8,9 @@
 import joblib
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
 from sklearn import metrics
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
+
 
 
 class RFModel:
@@ -34,7 +35,7 @@ class RFModel:
         self.train_data = np.array(self.preprocess(self.train_data))
         self.test_data = np.array(self.preprocess(self.test_data))
         rf_model = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-                                          max_depth=None, max_features='auto', max_leaf_nodes=None,
+                                          max_depth=None, max_features=None, max_leaf_nodes=None,
                                           min_samples_leaf=1, min_samples_split=2,
                                           min_weight_fraction_leaf=0.0, n_estimators=100, n_jobs=1,
                                           oob_score=False, random_state=None, verbose=0,
@@ -43,6 +44,8 @@ class RFModel:
         print("[INFO] Successfully initialize a RF model !")
         print("[INFO] Training the model…… ")
         #   进行模型训练
+        print(self.train_data)
+        print(self.train_label)
         rf_model.fit(self.train_data, self.train_label)
         print("[INFO] Model training completed !")
         # 保存训练好的模型，下次使用时直接加载就可以了
@@ -54,10 +57,22 @@ class RFModel:
         #   给出每一个标签的预测概率
         rf_probs = rf_model.predict_proba(self.test_data)[:, 1]
         #   计算模型的准确率
-        rf_acc = metrics.accuracy_score(rf_predictions, self.test_label)
+        # rf_acc = metrics.accuracy_score(rf_predictions, self.test_label)
+        accuracy = accuracy_score(self.test_label, rf_predictions)
+        # 计算精确率（Precision）
+        precision = precision_score(self.test_label, rf_predictions)
+        # 计算召回率（Recall）
+        recall = recall_score(self.test_label, rf_predictions)
+        # 计算F1-score
+        f1 = f1_score(self.test_label, rf_predictions)
         rf_confusion_matrix = metrics.confusion_matrix(self.test_label, rf_predictions, labels=None, sample_weight=None)
         print("confusion metrix:\n", rf_confusion_matrix)
-        print("overall accuracy: %f" % (rf_acc))
+        print(f"Acc: {accuracy:.4f}")
+        print(f"Precision: {precision:.4f}")
+        print(f"Recall: {recall:.4f}")
+        print(f"F1-score: {f1:.4f}")
+
+        
         print(rf_predictions)
         print(rf_probs)
 

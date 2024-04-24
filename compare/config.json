@@ -22,7 +22,7 @@
     "train_data": "../data/cwetrain",
     "eval_data": "../data/cweeval",
     "stop_word_path": "../reviews/english",
-    "word_vector_path": "../word_embedded/word2vec_model.txt",
+    "word_vector_path": "../new_word2vec_model.txt",
     "output_path": "output/induction",
     "ckpt_model_path": "ckpt_model/induction",
     "pb_model_path": "pb_model/induction",
