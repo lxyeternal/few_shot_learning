@@ -14,20 +14,3 @@
 
 #### prototypical_network
 * paper: Prototypical Networks for Few-shot Learning
-
-#### siamese_network
-* paper: Siamese Neural Networks for One-shot Image Recognition
-
-
-#### ARSC data set
-* the data from Amazon Review Data Set, arranged by Alibaba Group 
-* citation: ***Image-based recommendations on styles and substitutes J. McAuley, C. Targett, J. Shi, A. van den Hengel SIGIR, 2015***
-* citation: ***Mo Yu, Xiaoxiao Guo, Jinfeng Yi, Shiyu Chang, Saloni Potdar, Yu Cheng, Gerald Tesauro, Haoyu Wang, and Bowen Zhou. 2018. Diverse few-shot text classification with multiple metrics***
-
-#### word vector
-* using glove word vector, you need download 300 dim glove word vector and place it in word_embedded dir.
-
-#### note
-* You can only use 2-way, and if you need to use other way, you can modify the data_helper.py file.
-* Shot should not be more than 10, because there are few comments under some categories. 
-* The number of categories in prediction and training can not be equal.
