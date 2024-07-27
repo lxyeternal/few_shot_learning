@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; variable_0 = ( wchar_t * ) calloc ( 20 , sizeof ( wchar_t ) ) ; if ( func_1 ( ) ) static int func_2 ( ) return 1 ; if ( variable_0 != NULL ) wcscpy ( variable_0 , L " Initialize " ) free ( variable_0 ) ;

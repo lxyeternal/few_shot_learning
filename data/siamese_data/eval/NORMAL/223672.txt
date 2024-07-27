@@ -1,0 +1,1 @@
+ static void func_0 ( ) long * variable_0 ; variable_0 = NULL ; variable_0 = NULL ; variable_0 = ( long * ) realloc ( variable_0 , 100 * sizeof ( long ) ) ; func_1 ( variable_0 ) ; void func_2 ( long * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( long * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( long * variable_0 ) free ( variable_0 ) ;

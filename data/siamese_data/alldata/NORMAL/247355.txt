@@ -1,0 +1,1 @@
+ static void func_0 ( ) int * variable_0 ; int * variable_1 = ( int * ) func_1 ( 100 * sizeof ( int ) ) ; if ( func_2 ( ) ) static int func_3 ( ) return 0 ; variable_0 = variable_1 ; int variable_2 [ 100 ] = { 0 } ; memcpy ( variable_0 , variable_2 , 100 * sizeof ( int ) ) ; func_4 ( variable_0 [ 0 ] ) ; void func_5 ( int variable_3 ) printf ( " %d \n " , variable_3 ) ;

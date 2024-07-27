@@ -1,0 +1,1 @@
+ void func_0 ( ) while ( 1 ) variable_0 = ( char * ) malloc ( sizeof ( variable_0 ) ) ; * variable_0 = ' B ' ; func_1 ( * variable_0 ) ; void func_2 ( char variable_1 ) printf ( " % 02x \n " , variable_1 ) ; free ( variable_0 ) ;

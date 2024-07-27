@@ -1,0 +1,1 @@
+ static void func_0 ( ) char * variable_0 ; if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; variable_0 = new char [ 100 ] ; strcpy ( variable_0 , " A String " ) ; func_3 ( variable_0 ) ; void func_4 ( const char * variable_1 ) if ( variable_1 != NULL ) printf ( " %s \n " , variable_1 ) ; delete [ ] variable_0 delete [ ] variable_0

@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) ) ; * variable_1 = variable_0 ; memmove ( variable_2 , variable_0 , wcslen ( variable_0 ) * sizeof ( wchar_t ) ) ; func_1 ( variable_0 ) ; void func_2 ( const wchar_t * variable_3 ) if ( variable_3 != NULL ) wprintf ( L " % ls \n " , variable_3 ) free ( variable_0 ) ;

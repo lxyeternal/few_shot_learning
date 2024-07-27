@@ -1,0 +1,1 @@
+ static void func_0 ( ) switch ( 5 ) int * variable_0 = NULL ; variable_0 = ( int * ) malloc ( sizeof ( * variable_0 ) ) ; * variable_0 = 6 ; func_1 ( * variable_0 ) ; void func_2 ( int variable_1 ) printf ( " %d \n " , variable_1 ) ; free ( variable_0 ) ;

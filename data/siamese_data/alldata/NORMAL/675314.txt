@@ -1,0 +1,1 @@
+ static void func_0 ( ) long * variable_0 ; variable_0 = ( long * ) calloc ( 100 , sizeof ( long ) ) ; func_1 ( variable_0 ) ; void func_2 ( long * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( long * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( long * variable_0 ) func_7 ( variable_0 ) ; void func_8 ( long * variable_0 ) free ( variable_0 ) ;

@@ -1,0 +1,1 @@
+ static void func_0 ( ) char * variable_0 ; variable_0 = new char [ 100 ] ; if ( variable_1 == 5 ) memset ( variable_0 , ' A ' , 50 - 1 ) ; variable_0 [ 50 - 1 ] = ' \0 ' ; strcat ( variable_2 , variable_0 ) ; func_1 ( variable_0 ) ; void func_2 ( const char * variable_3 ) if ( variable_3 != NULL ) printf ( " %s \n " , variable_3 ) ; delete [ ] variable_0

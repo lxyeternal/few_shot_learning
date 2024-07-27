@@ -1,0 +1,1 @@
+ void func_0 ( ) while ( 1 ) variable_0 = ( short * ) malloc ( sizeof ( variable_0 ) ) ; * variable_0 = 5 ; func_1 ( * variable_0 ) ; void func_2 ( short variable_1 ) printf ( " % hd \n " , variable_1 ) ; free ( variable_0 ) ;

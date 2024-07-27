@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = L " " variable_0 = func_1 ( variable_0 ) ; static wchar_t * func_2 ( wchar_t * variable_0 ) variable_0 = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) ) ; if ( variable_0 == NULL ) if ( ! func_3 ( variable_0 , 100 * sizeof ( wchar_t ) ) ) wcscpy ( variable_0 , L " Password1234 ! " ) return variable_0 ;

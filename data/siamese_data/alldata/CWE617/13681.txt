@@ -1,0 +1,1 @@
+ void func_0 ( ) int variable_0 ; variable_0 = - 1 ; if ( func_1 ( ) ) static int func_2 ( ) return 1 ; char variable_1 [ variable_2 ] = " " ; if ( fgets ( variable_1 , variable_2 , variable_3 ) != NULL ) variable_0 = atoi ( variable_1 ) ; assert ( variable_0 > variable_4 ) ;

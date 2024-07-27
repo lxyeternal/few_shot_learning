@@ -1,0 +1,1 @@
+ static void func_0 ( ) variable_0 * variable_1 ; variable_1 = NULL ; variable_1 = ( twoIntsStruct * ) calloc ( 1 , sizeof ( variable_0 ) ) ; if ( func_1 ( ) ) int func_2 ( ) return 0 ; if ( variable_1 != NULL ) variable_1 [ 0 ] . variable_2 = 1 ; variable_1 [ 0 ] . variable_3 = 1 ; free ( variable_1 ) ;

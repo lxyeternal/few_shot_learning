@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; char variable_0 [ 100 ] = " " ; char * variable_1 = variable_0 ; if ( fgets ( variable_1 , 100 , variable_2 ) == NULL ) func_3 ( variable_1 ) ; void func_4 ( const char * variable_3 ) if ( variable_3 != NULL ) printf ( " %s \n " , variable_3 ) ;

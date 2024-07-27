@@ -1,0 +1,1 @@
+ void func_0 ( ) int variable_0 ; variable_0 = - 1 ; if ( variable_1 == 5 ) variable_0 = func_1 ( ) ; if ( variable_1 == 5 ) int variable_2 ; int * variable_3 = ( int * ) malloc ( 10 * sizeof ( int ) ) ; for ( variable_2 = 0 ; variable_2 < 10 ; variable_2 ++ ) variable_3 [ variable_2 ] = 0 ; if ( variable_0 >= 0 ) variable_3 [ variable_0 ] = 1 ; free ( variable_3 ) ;

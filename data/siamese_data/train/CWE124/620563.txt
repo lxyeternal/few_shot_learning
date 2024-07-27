@@ -1,0 +1,1 @@
+ void func_0 ( ) char variable_0 [ variable_1 ] = " " ; if ( fgets ( variable_0 , variable_1 , variable_2 ) != NULL ) variable_3 = atoi ( variable_0 ) ; int variable_4 = variable_3 ; int variable_3 = variable_4 ; if ( variable_3 < 10 ) variable_5 [ variable_3 ] = 1 ; func_1 ( variable_5 [ variable_6 ] ) ; void func_2 ( int variable_7 ) printf ( " %d \n " , variable_7 ) ;

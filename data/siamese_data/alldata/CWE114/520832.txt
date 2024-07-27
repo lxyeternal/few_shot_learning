@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; wchar_t variable_1 [ 100 ] = L " " variable_0 = variable_1 ; if ( variable_2 ) wcscpy ( variable_0 , L " winsrv . dll " ) HMODULE variable_3 ; variable_3 = func_1 ( variable_0 ) ; if ( variable_3 != NULL ) FreeLibrary ( variable_3 ) ;

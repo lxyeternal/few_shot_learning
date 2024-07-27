@@ -1,0 +1,1 @@
+ static void func_0 ( ) int * variable_0 ; variable_0 = NULL ; switch ( 6 ) variable_0 = ( int * ) realloc ( variable_0 , 100 * sizeof ( int ) ) ; variable_0 [ 0 ] = 5 ; func_1 ( variable_0 [ 0 ] ) ; void func_2 ( int variable_1 ) printf ( " %d \n " , variable_1 ) ; free ( variable_0 ) ;

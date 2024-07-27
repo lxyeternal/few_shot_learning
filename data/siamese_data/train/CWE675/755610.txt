@@ -1,0 +1,1 @@
+ void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; variable_0 = freopen ( " BadSource_freopen . txt " , " w + " , variable_1 ) ; variable_0 = fopen ( " GoodSource_fopen . txt " , " w + " ) ; if ( func_3 ( ) ) int func_4 ( ) return ( rand ( ) % 2 ) ; fclose ( variable_0 ) ;

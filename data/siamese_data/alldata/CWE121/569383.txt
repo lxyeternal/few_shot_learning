@@ -1,0 +1,1 @@
+ void func_0 ( variable_0 < int , char * > variable_1 ) char variable_2 [ 100 ] ; memset ( variable_2 , ' C ' , 100 - 1 ) ; variable_2 [ 100 - 1 ] = ' \0 ' ; variable_3 [ variable_4 ] = variable_2 [ variable_4 ] ; variable_3 [ 100 - 1 ] = ' \0 ' ; func_1 ( variable_3 ) ; void func_2 ( const char * variable_5 ) if ( variable_5 != NULL ) printf ( " %s \n " , variable_5 ) ;

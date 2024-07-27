@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( 0 ) char variable_0 [ 150 ] , variable_1 [ 100 ] ; memset ( variable_0 , ' A ' , 149 ) ; variable_0 [ 149 ] = ' \0 ' ; strncpy ( variable_1 , variable_0 , 99 ) ; variable_1 [ 99 ] = ' \0 ' ; func_1 ( variable_1 ) ; void func_2 ( const char * variable_2 ) if ( variable_2 != NULL ) printf ( " %s \n " , variable_2 ) ;

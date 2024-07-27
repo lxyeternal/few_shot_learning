@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( 5 == 5 ) char variable_0 [ variable_1 ] = " " ; if ( fgets ( variable_0 , variable_1 , variable_2 ) != NULL ) variable_3 = atoi ( variable_0 ) ; if ( variable_3 >= 0 && variable_3 < ( 10 ) ) variable_4 [ variable_3 ] = 1 ; func_1 ( variable_4 [ variable_5 ] ) ; void func_2 ( int variable_6 ) printf ( " %d \n " , variable_6 ) ; delete [ ] variable_4

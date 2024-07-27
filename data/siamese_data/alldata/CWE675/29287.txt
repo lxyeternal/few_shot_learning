@@ -1,0 +1,1 @@
+ void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) static int func_2 ( ) return 1 ; variable_0 = freopen ( " BadSource_freopen . txt " , " w + " , variable_1 ) ; if ( func_3 ( ) ) static int func_4 ( ) return 1 ; fclose ( variable_0 ) ;

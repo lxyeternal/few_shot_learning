@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; wchar_t variable_1 [ 100 ] = L " " variable_0 = variable_1 ; if ( func_1 ( ) ) static int func_2 ( ) return 1 ; wcscpy ( variable_0 , variable_2 ) ; variable_3 = func_3 ( variable_0 , L " wb " ) if ( variable_3 != NULL ) func_4 ( variable_3 ) ;

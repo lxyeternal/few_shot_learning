@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = new wchar_t [ 100 ] ; wmemset ( variable_0 , L ' A ' , 50 - 1 variable_0 [ 50 - 1 ] = L variable_1 * variable_2 = new variable_3 variable_2 -> func_1 ( variable_0 ) ; void variable_3 :: func_2 ( wchar_t * variable_0 ) wchar_t variable_4 [ 50 ] = L " " wcsncpy ( variable_4 , variable_0 , wcslen ( variable_0 ) ) ;

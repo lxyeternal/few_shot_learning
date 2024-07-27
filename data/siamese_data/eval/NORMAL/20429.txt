@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = ( wchar_t * ) calloc ( 100 , sizeof ( wchar_t ) ) ; wcscpy ( variable_0 , L " A String " ) func_1 ( variable_0 ) ; void func_2 ( const wchar_t * variable_1 ) if ( variable_1 != NULL ) wprintf ( L " % ls \n " , variable_1 ) * variable_2 = variable_0 ; free ( variable_0 ) ;

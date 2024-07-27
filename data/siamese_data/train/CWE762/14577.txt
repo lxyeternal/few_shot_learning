@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) static int func_2 ( ) return 1 ; variable_0 = new wchar_t [ 100 ] ; if ( func_3 ( ) ) static int func_4 ( ) return 1 ; free ( variable_0 ) ;

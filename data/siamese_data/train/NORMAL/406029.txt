@@ -1,0 +1,1 @@
+ static void func_0 ( ) int * variable_0 ; variable_0 = NULL ; if ( 5 != 5 ) int * variable_1 = ( int * ) malloc ( 100 * sizeof ( int ) ) ; size_t variable_2 ; for ( variable_2 = 0 ; variable_2 < 100 ; variable_2 ++ ) variable_1 [ variable_2 ] = 5 ; variable_0 = variable_1 ; free ( variable_0 ) ;

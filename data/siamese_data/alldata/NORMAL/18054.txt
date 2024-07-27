@@ -1,0 +1,1 @@
+ static void func_0 ( ) long * variable_0 ; structType variable_1 ; variable_0 = NULL ; variable_0 = ( long * ) malloc ( 100 * sizeof ( long ) ) ; variable_1 . variable_2 = variable_0 ; func_1 ( variable_1 ) ; void func_2 ( structType variable_1 ) long * variable_0 = variable_1 . variable_2 ; free ( variable_0 ) ;

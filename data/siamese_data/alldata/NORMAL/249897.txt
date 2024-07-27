@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; variable_0 = ( int * ) calloc ( 100 , sizeof ( int ) ) ; variable_0 = ( int * ) func_3 ( 100 * sizeof ( int ) ) ; variable_0 [ 0 ] = 5 ; if ( func_4 ( ) ) int func_5 ( ) return ( rand ( ) % 2 ) ; free ( variable_0 ) ;

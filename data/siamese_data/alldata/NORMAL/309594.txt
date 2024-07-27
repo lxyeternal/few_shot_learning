@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( func_1 ( ) ) int func_2 ( ) return 1 ; char * variable_0 = NULL ; variable_0 = ( char * ) malloc ( sizeof ( * variable_0 ) ) ; * variable_0 = ' G ' ; func_3 ( * variable_0 ) ; void func_4 ( char variable_1 ) printf ( " % 02x \n " , variable_1 ) ; free ( variable_0 ) ;

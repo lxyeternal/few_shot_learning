@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; variable_0 = ( int * ) malloc ( 100 * sizeof ( int ) ) ; variable_0 = new int if ( func_3 ( ) ) int func_4 ( ) return ( rand ( ) % 2 ) ; delete variable_0 free ( variable_0 ) ;

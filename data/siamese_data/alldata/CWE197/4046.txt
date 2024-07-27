@@ -1,0 +1,1 @@
+ void func_0 ( ) if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; char variable_0 [ variable_1 ] = " " ; if ( fgets ( variable_0 , variable_1 , variable_2 ) != NULL ) variable_3 = atoi ( variable_0 ) ; short variable_4 = ( short ) variable_3 ; func_3 ( variable_4 ) ; void func_4 ( short variable_5 ) printf ( " % hd \n " , variable_5 ) ;

@@ -1,0 +1,1 @@
+ void func_0 ( ) int variable_0 ; variable_0 = - 1 ; variable_0 = func_1 ( " BadSource_open . txt " , variable_1 | variable_2 , variable_3 | variable_4 ) ; func_2 ( & variable_0 ) ; void func_3 ( void * variable_5 ) int * variable_6 = ( int * ) variable_5 ; int variable_0 = ( * variable_6 ) ; if ( variable_0 != - 1 ) fclose ( ( FILE * ) variable_0 ) ;

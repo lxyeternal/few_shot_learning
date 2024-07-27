@@ -1,0 +1,1 @@
+ static void func_0 ( ) char * variable_0 ; variable_0 = NULL ; variable_0 = NULL ; variable_0 = ( char * ) realloc ( variable_0 , 100 * sizeof ( char ) ) ; func_1 ( & variable_0 ) ; void func_2 ( void * variable_1 ) char * * variable_2 = ( char * * ) variable_1 ; char * variable_0 = ( * variable_2 ) ; free ( variable_0 ) ;

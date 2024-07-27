@@ -1,0 +1,1 @@
+ void func_0 ( ) char * variable_0 ; variable_0 = NULL ; variable_0 = NULL ; variable_0 = ( char * ) realloc ( variable_0 , 100 * sizeof ( char ) ) ; func_1 ( variable_0 ) ; void func_2 ( char * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( char * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( char * variable_0 ) delete variable_0

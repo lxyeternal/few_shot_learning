@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; variable_0 = new wchar_t func_1 ( variable_0 ) ; void func_2 ( wchar_t * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( wchar_t * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( wchar_t * variable_0 ) free ( variable_0 ) ;

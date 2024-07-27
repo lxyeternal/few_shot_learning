@@ -1,0 +1,1 @@
+ static void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; variable_0 = fopen ( " BadSource_fopen . txt " , " w + " ) ; if ( func_1 ( ) ) static int func_2 ( ) return 0 ; variable_0 = fopen ( " GoodSink_fopen . txt " , " w + " ) ; if ( variable_0 != NULL ) fclose ( variable_0 ) ;

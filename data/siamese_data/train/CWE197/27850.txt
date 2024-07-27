@@ -1,0 +1,1 @@
+ void func_0 ( ) int variable_0 ; for ( variable_0 = 0 ; variable_0 < 1 ; variable_0 ++ ) char variable_1 [ variable_2 ] = " " ; if ( fgets ( variable_1 , variable_2 , variable_3 ) != NULL ) variable_4 = atoi ( variable_1 ) ; short variable_5 = ( short ) variable_4 ; func_1 ( variable_5 ) ; void func_2 ( short variable_6 ) printf ( " % hd \n " , variable_6 ) ;

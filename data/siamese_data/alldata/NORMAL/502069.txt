@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( variable_0 != 5 ) variable_1 * variable_2 ; variable_2 = ( double * ) malloc ( sizeof ( variable_1 ) ) ; * variable_2 = 5 . 0 ; * variable_3 = variable_2 ; variable_1 * variable_2 = * variable_3 ; func_1 ( * variable_2 ) ; void func_2 ( double variable_4 ) printf ( " % g \n " , variable_4 ) ; free ( variable_3 ) ;

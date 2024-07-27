@@ -1,0 +1,1 @@
+ void func_0 ( ) if ( 1 ) variable_0 = ( int * ) malloc ( sizeof ( variable_0 ) ) ; * variable_0 = 5 ; func_1 ( * variable_0 ) ; void func_2 ( int variable_1 ) printf ( " %d \n " , variable_1 ) ; free ( variable_0 ) ;

@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; if ( func_1 ( ) ) int func_2 ( ) return 1 ; variable_0 = ( wchar_t * ) malloc ( 100 * sizeof ( wchar_t ) ) ; free ( variable_0 ) ; func_3 ( variable_0 ) ; void func_4 ( const wchar_t * variable_1 ) if ( variable_1 != NULL ) wprintf ( L " % ls \n " , variable_1 )

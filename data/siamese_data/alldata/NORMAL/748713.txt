@@ -1,0 +1,1 @@
+ void func_0 ( ) variable_0 * variable_1 ; variable_1 = NULL ; variable_2 * variable_3 = new func_1 ( variable_1 ) ; variable_2 :: func_2 ( variable_0 * variable_4 ) variable_1 = variable_4 ; variable_1 = ( double * ) malloc ( sizeof ( variable_1 ) ) ; * variable_1 = 1 . 7 variable_5 ; delete variable_3 variable_2 :: ~ func_3 ( ) free ( variable_1 ) ;

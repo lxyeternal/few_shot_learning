@@ -1,0 +1,1 @@
+ static void func_0 ( ) if ( variable_0 == 5 ) char variable_1 [ variable_2 ] ; if ( fgets ( variable_1 , variable_2 , variable_3 ) != NULL ) variable_4 = ( float ) atof ( variable_1 ) ; if ( fabs ( variable_4 ) > 0 . 000001 ) int variable_5 = ( int ) ( 100 . 0 / variable_4 ) ; func_1 ( variable_5 ) ; void func_2 ( int variable_6 ) printf ( " %d \n " , variable_6 ) ;

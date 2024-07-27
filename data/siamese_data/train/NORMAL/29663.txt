@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; variable_0 = ( int * ) calloc ( 100 , sizeof ( int ) ) ; func_1 ( variable_0 ) ; void func_2 ( int * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( int * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( int * variable_0 ) delete [ ] variable_0

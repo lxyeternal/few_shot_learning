@@ -1,0 +1,1 @@
+ static void func_0 ( ) char * variable_0 ; variable_0 = " " ; variable_0 = func_1 ( variable_0 ) ; static char * func_2 ( char * variable_0 ) if ( variable_1 ) variable_0 = ( char * ) malloc ( 100 * sizeof ( char ) ) ; if ( variable_0 == NULL ) if ( ! func_3 ( variable_0 , 100 * sizeof ( char ) ) ) strcpy ( variable_0 , " Password1234 ! " ) ; return variable_0 ;

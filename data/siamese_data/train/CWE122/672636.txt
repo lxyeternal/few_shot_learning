@@ -1,0 +1,1 @@
+ void func_0 ( ) char * variable_0 ; variable_0 = NULL ; char variable_1 [ 100 ] ; memset ( variable_1 , ' C ' , 100 - 1 ) ; variable_1 [ 100 - 1 ] = ' \0 ' ; strcat ( variable_0 , variable_1 ) ; func_1 ( variable_0 ) ; void func_2 ( const char * variable_2 ) if ( variable_2 != NULL ) printf ( " %s \n " , variable_2 ) ; free ( variable_0 ) ;

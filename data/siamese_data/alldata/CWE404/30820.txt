@@ -1,0 +1,1 @@
+ void func_0 ( ) int variable_0 ; variable_0 = - 1 ; variable_1 * variable_2 = new func_1 ( variable_0 ) ; variable_1 :: func_2 ( int variable_3 ) variable_0 = variable_3 ; variable_0 = func_3 ( " BadSource_open . txt " , variable_4 | variable_5 , variable_6 | variable_7 ) ; delete variable_2 variable_1 :: ~ func_4 ( ) if ( variable_0 != - 1 ) fclose ( ( FILE * ) variable_0 ) ;

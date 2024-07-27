@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; wchar_t * variable_1 [ 5 ] ; variable_0 = NULL ; variable_0 = ( wchar_t * ) calloc ( 100 , sizeof ( wchar_t ) ) ; variable_1 [ 2 ] = variable_0 ; func_1 ( variable_1 ) ; void func_2 ( wchar_t * variable_1 [ ] ) wchar_t * variable_0 = variable_1 [ 2 ] ; free ( variable_0 ) ;

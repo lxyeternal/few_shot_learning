@@ -1,0 +1,1 @@
+ static void func_0 ( ) int * variable_0 ; variable_0 = NULL ; if ( variable_1 == 5 ) variable_0 = ( int * ) malloc ( 100 * sizeof ( int ) ) ; int variable_2 [ 100 ] = { 0 } ; memcpy ( variable_0 , variable_2 , 100 * sizeof ( int ) ) ; func_1 ( variable_0 [ 0 ] ) ; void func_2 ( int variable_3 ) printf ( " %d \n " , variable_3 ) ; free ( variable_0 ) ;

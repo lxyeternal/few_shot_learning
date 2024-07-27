@@ -1,0 +1,1 @@
+ static void func_0 ( ) long * variable_0 ; variable_0 = NULL ; variable_0 = ( long * ) realloc ( variable_0 , 1 * sizeof ( long ) ) ; if ( func_1 ( ) ) static int func_2 ( ) return 0 ; if ( variable_0 != NULL ) variable_0 [ 0 ] = 5 L ; free ( variable_0 ) ;

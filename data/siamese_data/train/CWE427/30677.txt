@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; wchar_t variable_1 [ 250 ] = L " PATH = " variable_0 = variable_1 ; switch ( 6 ) size_t variable_2 = wcslen ( variable_0 ) ; wchar_t * variable_3 = func_1 ( variable_4 ) ; if ( variable_3 != NULL ) wcsncat ( variable_0 + variable_2 , variable_3 , 250 - variable_2 - 1 ) ; func_2 ( variable_0 ) ;

@@ -1,0 +1,1 @@
+ static void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; variable_1 * variable_2 = new func_1 ( variable_0 ) ; variable_1 :: func_2 ( FILE * variable_3 ) variable_0 = variable_3 ; variable_0 = func_3 ( L " file . txt " , L " w + " ) delete variable_2 variable_1 :: ~ func_4 ( ) if ( variable_0 != NULL ) fclose ( variable_0 ) ;

@@ -1,0 +1,1 @@
+ void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) int func_2 ( ) return 1 ; variable_0 = fopen ( " BadSource_fopen . txt " , " w + " ) ; if ( func_3 ( ) ) int func_4 ( ) return 1 ; fclose ( variable_0 ) ;

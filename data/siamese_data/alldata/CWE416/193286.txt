@@ -1,0 +1,1 @@
+ void func_0 ( ) char * variable_0 ; variable_0 = NULL ; switch ( 6 ) variable_0 = ( char * ) malloc ( 100 * sizeof ( char ) ) ; memset ( variable_0 , ' A ' , 100 - 1 ) ; variable_0 [ 100 - 1 ] = ' \0 ' ; free ( variable_0 ) ; func_1 ( variable_0 ) ; void func_2 ( const char * variable_1 ) if ( variable_1 != NULL ) printf ( " %s \n " , variable_1 ) ;

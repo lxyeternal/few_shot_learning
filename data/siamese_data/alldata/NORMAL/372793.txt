@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; wchar_t variable_1 [ 100 ] ; variable_0 = variable_1 ; if ( variable_2 ) wmemset ( variable_0 , L ' A ' , 100 - 1 variable_0 [ 100 - 1 ] = L ' \0 ' size_t variable_3 , variable_4 ; variable_4 = wcslen ( variable_0 ) ; for ( variable_3 = 0 ; variable_3 < variable_4 ; variable_3 ++ )

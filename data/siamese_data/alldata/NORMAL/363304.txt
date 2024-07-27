@@ -1,0 +1,1 @@
+ void func_0 ( ) if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; char variable_0 [ variable_1 ] ; char * variable_2 ; char variable_0 [ variable_1 ] ; char * variable_2 ; if ( fgets ( variable_0 , variable_1 , variable_3 ) == NULL ) variable_2 = strchr ( variable_0 , ' \r ' ) ; if ( variable_2 ) * variable_2 = ' \0 ' ; if ( variable_2 ) * variable_2 = ' \0 ' ;

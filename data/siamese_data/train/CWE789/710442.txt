@@ -1,0 +1,1 @@
+ void variable_0 :: func_0 ( size_t variable_1 ) const char * variable_2 ; if ( variable_1 > strlen ( variable_3 ) ) variable_2 = new char [ variable_1 ] ; strcpy ( variable_2 , variable_3 ) ; func_1 ( variable_2 ) ; void func_2 ( const char * variable_4 ) if ( variable_4 != NULL ) printf ( " %s \n " , variable_4 ) ; delete [ ] variable_2

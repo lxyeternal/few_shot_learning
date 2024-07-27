@@ -1,0 +1,1 @@
+ static void func_0 ( ) variable_0 * variable_1 ; CWE690_NULL_Deref_From_Return__int64_t_calloc_34_unionType variable_2 ; variable_1 = NULL ; variable_1 = ( int64_t * ) calloc ( 1 , sizeof ( variable_0 ) ) ; variable_2 . variable_3 = variable_1 ; variable_0 * variable_1 = variable_2 . variable_4 ; if ( variable_1 != NULL ) variable_1 [ 0 ] = 5 L L free ( variable_1 ) ;

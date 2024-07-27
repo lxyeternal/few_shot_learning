@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; variable_1 * variable_2 = new func_1 ( variable_0 ) ; variable_1 :: func_2 ( wchar_t * variable_3 ) variable_0 = variable_3 ; variable_0 = NULL ; variable_0 = ( wchar_t * ) realloc ( variable_0 , 100 * sizeof ( wchar_t ) ) ; delete variable_2 variable_1 :: ~ func_3 ( ) free ( variable_0 ) ;

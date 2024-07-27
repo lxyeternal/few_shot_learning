@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; variable_1 < int , int * > variable_2 ; variable_0 = NULL ; variable_0 = new int variable_2 [ 0 ] = variable_0 ; variable_2 [ 1 ] = variable_0 ; variable_2 [ 2 ] = variable_0 ; func_1 ( variable_2 ) ; void func_2 ( variable_1 < int , int * > variable_2 ) int * variable_0 = variable_2 [ 2 ] ; free ( variable_0 ) ;

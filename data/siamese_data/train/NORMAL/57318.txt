@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; variable_0 = NULL ; variable_0 = ( wchar_t * ) realloc ( variable_0 , 100 * sizeof ( wchar_t ) ) ; func_1 ( variable_0 ) ; void func_2 ( wchar_t * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( wchar_t * variable_0 ) delete [ ] variable_0

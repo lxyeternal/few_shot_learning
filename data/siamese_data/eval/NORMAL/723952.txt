@@ -1,0 +1,1 @@
+ static void func_0 ( ) char * variable_0 ; variable_0 = ( char * ) calloc ( 100 , sizeof ( char ) ) ; func_1 ( variable_0 ) ; void func_2 ( char * variable_0 ) func_3 ( variable_0 ) ; void func_4 ( char * variable_0 ) func_5 ( variable_0 ) ; void func_6 ( char * variable_0 ) func_7 ( variable_0 ) ; void func_8 ( char * variable_0 ) free ( variable_0 ) ;

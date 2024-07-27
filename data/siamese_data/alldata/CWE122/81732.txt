@@ -1,0 +1,1 @@
+ void func_0 ( ) char * variable_0 = ( char * ) malloc ( sizeof ( variable_1 ) ) ; variable_2 = variable_0 ; variable_3 * variable_4 = new ( variable_2 ) variable_3 variable_4 -> variable_5 = 5 ; variable_4 -> variable_6 = 10 ; func_1 ( variable_4 -> variable_5 ) ; void func_2 ( int variable_7 ) printf ( " %d \n " , variable_7 ) ; free ( variable_2 ) ;

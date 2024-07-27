@@ -1,0 +1,1 @@
+ void func_0 ( ) long * variable_0 ; variable_0 = NULL ; func_1 ( variable_0 ) ; void func_2 ( long * & variable_0 ) variable_0 = ( long * ) malloc ( 100 * sizeof ( long ) ) ; size_t variable_1 ; for ( variable_1 = 0 ; variable_1 < 100 ; variable_1 ++ ) variable_0 [ variable_1 ] = 5 L ; free ( variable_0 ) ;

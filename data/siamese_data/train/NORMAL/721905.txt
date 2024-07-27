@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; wchar_t * & variable_1 = variable_0 ; wchar_t variable_2 [ 100 ] ; variable_0 = variable_2 ; variable_0 [ 0 ] = L ' \0 ' wchar_t * variable_0 = variable_1 ; wchar_t variable_3 [ 100 ] ; wmemset ( variable_3 , L ' C ' , 100 - 1 variable_3 [ 100 - 1 ] = L ' \0 ' wcscat ( variable_0 , variable_3 ) ;

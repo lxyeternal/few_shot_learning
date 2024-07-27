@@ -1,0 +1,1 @@
+ void func_0 ( ) while ( 1 ) variable_0 = ( int * ) malloc ( sizeof ( int ) ) ; * variable_0 = 5 ; func_1 ( * variable_0 ) ; void func_2 ( int variable_1 ) printf ( " %d \n " , variable_1 ) ; if ( variable_0 != NULL ) * variable_0 = 10 ; func_3 ( * variable_0 ) ; void func_4 ( int variable_1 ) printf ( " %d \n " , variable_1 ) ;

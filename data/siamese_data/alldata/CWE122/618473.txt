@@ -1,0 +1,1 @@
+ void func_0 ( ) variable_0 < int * > variable_1 ; func_1 ( variable_1 ) ; void func_2 ( variable_0 < int * > variable_1 ) int * variable_2 = variable_1 [ 2 ] ; int variable_3 [ 100 ] = { 0 } ; memcpy ( variable_2 , variable_3 , 100 * sizeof ( int ) ) ; func_3 ( variable_2 [ 0 ] ) ; void func_4 ( int variable_4 ) printf ( " %d \n " , variable_4 ) ; delete [ ] variable_2

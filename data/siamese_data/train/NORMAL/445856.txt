@@ -1,0 +1,1 @@
+ static void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; variable_0 = ( wchar_t * ) realloc ( variable_0 , 20 * sizeof ( wchar_t ) ) ; if ( func_1 ( ) ) int func_2 ( ) return 0 ; if ( variable_0 != NULL ) wcscpy ( variable_0 , L " Initialize " ) free ( variable_0 ) ;

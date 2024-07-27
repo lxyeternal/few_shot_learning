@@ -1,0 +1,1 @@
+ void func_0 ( ) if ( func_1 ( ) ) int func_2 ( ) return 1 ; char variable_0 [ variable_1 ] = " " ; if ( fgets ( variable_0 , variable_1 , variable_2 ) != NULL ) variable_3 = atoi ( variable_0 ) ; char variable_4 = ( char ) variable_3 ; func_3 ( variable_4 ) ; void func_4 ( char variable_5 ) printf ( " % 02x \n " , variable_5 ) ;

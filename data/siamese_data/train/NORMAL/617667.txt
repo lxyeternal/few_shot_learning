@@ -1,0 +1,1 @@
+ static void func_0 ( ) variable_0 * variable_1 ; variable_1 = NULL ; variable_1 = func_1 ( variable_1 ) ; static variable_0 * func_2 ( variable_0 * variable_1 ) variable_1 = ( twoIntsStruct * ) malloc ( 1 * sizeof ( variable_0 ) ) ; return variable_1 ; if ( variable_1 != NULL ) variable_1 [ 0 ] . variable_2 = 1 ; variable_1 [ 0 ] . variable_3 = 1 ; free ( variable_1 ) ;

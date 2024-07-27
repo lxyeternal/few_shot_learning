@@ -1,0 +1,1 @@
+ void func_0 ( ) wchar_t * variable_0 ; variable_0 = NULL ; if ( func_1 ( ) ) int func_2 ( ) return ( rand ( ) % 2 ) ; variable_0 = NULL ; variable_0 = ( wchar_t * ) realloc ( variable_0 , 100 * sizeof ( wchar_t ) ) ; variable_0 = new wchar_t [ 100 ] ; if ( func_3 ( ) ) int func_4 ( ) return ( rand ( ) % 2 ) ; free ( variable_0 ) ;

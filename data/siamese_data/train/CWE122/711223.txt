@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; variable_0 = NULL ; while ( 1 ) variable_0 = new int [ 50 ] ; int variable_1 [ 100 ] = { 0 } ; memcpy ( variable_0 , variable_1 , 100 * sizeof ( int ) ) ; func_1 ( variable_0 [ 0 ] ) ; void func_2 ( int variable_2 ) printf ( " %d \n " , variable_2 ) ; delete [ ] variable_0

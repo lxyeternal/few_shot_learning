@@ -1,0 +1,1 @@
+ static void func_0 ( ) FILE * variable_0 ; variable_0 = NULL ; variable_0 = fopen ( " file . txt " , " w + " ) ; func_1 ( & variable_0 ) ; void func_2 ( void * variable_1 ) FILE * * variable_2 = ( FILE * * ) variable_1 ; FILE * variable_0 = ( * variable_2 ) ; if ( variable_0 != NULL ) fclose ( variable_0 ) ;

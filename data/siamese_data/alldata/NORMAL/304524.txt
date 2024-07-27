@@ -1,0 +1,1 @@
+ static void func_0 ( ) int * variable_0 ; variable_0 = NULL ; variable_0 = ( int * ) calloc ( 1 , sizeof ( int ) ) ; if ( func_1 ( ) ) static int func_2 ( ) return 0 ; if ( variable_0 != NULL ) variable_0 [ 0 ] = 5 ; free ( variable_0 ) ;

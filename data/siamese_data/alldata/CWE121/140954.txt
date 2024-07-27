@@ -1,0 +1,1 @@
+ void func_0 ( ) int * variable_0 ; variable_0 = NULL ; variable_0 = ( int * ) func_1 ( 10 ) ; func_2 ( variable_0 ) ; void func_3 ( int * variable_0 ) int variable_1 [ 10 ] = { 0 } ; memmove ( variable_0 , variable_1 , 10 * sizeof ( int ) ) ; func_4 ( variable_0 [ 0 ] ) ; void func_5 ( int variable_2 ) printf ( " %d \n " , variable_2 ) ;
